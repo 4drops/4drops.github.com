@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[4DROPS Blog]]></title>
+  <link href="http://blog.4drops.hu/atom.xml" rel="self"/>
+  <link href="http://blog.4drops.hu/"/>
+  <updated>2011-11-12T12:58:07+01:00</updated>
+  <id>http://blog.4drops.hu/</id>
+  <author>
+    <name><![CDATA[4DROPS Solutions]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
