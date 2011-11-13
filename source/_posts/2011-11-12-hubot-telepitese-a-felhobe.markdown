@@ -11,16 +11,16 @@ published: false
 ---
 
 A [github][] néhány hete mindenki számára elérhetővé tette a [Hubot][] névre hallgató chat
-botot. A Hubot nem mást mint egy node.js szerver, ami különböző adapterek segítségével tud a
+botot. A Hubot nem más mint egy node.js szerver, ami különböző adapterek segítségével tud a
 külvilággal kommunikálni. Például egy chat szobához csatlakozva várja a többiek parancsait,
 kérdéseit, amikre válaszol.
 
 <!--more-->
 
-A projekt igen nagy népszerúségnek örvend. A kezdeteben is meglévő Campfire és IRC adapterek
+A projekt igen nagy népszerűségnek örvend. A kezdetekben is meglévő Campfire és IRC adapterek
 mellett sorra jelentek meg az újak, így ma már 12 adapter közül lehet választani, köztük pl.
 twitter, twillo, flowdock, gtalk. A gtalk adapternek köszönhetően pedig elég egy gmail account
-ahhoz, hogy saját Hubotunk legyen, akivel a GTalk chaten keresztül beszélhetünk. Peresze egy
+ahhoz, hogy saját Hubotunk legyen, akivel a GTalk chaten keresztül beszélhetünk. Persze egy
 hely is kell, ahol a bot fut és fogadja a parancsainkat. A github erre a Heroku nevű, ingyenesen
 is elérhető cloud szolgáltatást ajánja. Azonban hiában ingyenes, az extra szolgáltatások,
 mint pl. Redis szerver (ami szükséges a Hubot futtatásához), használatához szükség van
@@ -35,7 +35,7 @@ Először szükség lesz egy szerverre a felhőben, ehhez regisztráljunk be [ht
 oldalon. A regisztrációkor meg kell adni egy RSA kulcsot, ha még nincs, akkor az `ssh-keygen -t
 rsa -C "saját@email.com"` parancsal generálhatunk egy kulcspárt. Ennek a publikus részért kell
 megadnunk a regszitráció során (alapértelmezetten a `~/.ssh/id_rsa.pub` fájlban található).
-Ha túl vagyunk a regisztráción az "Oreder a machine" gombra kattintva hozhatunk létre egy új
+Ha túl vagyunk a regisztráción az "Order a machine" gombra kattintva hozhatunk létre egy új
 szervert. Ahhoz, hogy az új szerverünkhöz csatlakozni tudjunk, a kapott beállításokat el kell
 helyeznünk a `~/.ssh/config` fájlban, pl.:
 
@@ -97,7 +97,7 @@ wget https://github.com/downloads/github/hubot/hubot-1.1.11.tar.gz
 tar xvf hubot-1.1.11.tar.gz
 ```
 
-Ahhoz, hogy a távoli szerver autómatikusan elindítsa a robotot adjuk hozzá a `package.json`
+Ahhoz, hogy a távoli szerver automatikusan elindítsa a robotot, adjuk hozzá a `package.json`
 fájlhoz a `, "scripts": {"start": "./bin/hubot --adapter gtalk" }` sort, tehát a fájlunk most
 valahogy így kell, hogy kinézzen:
 
@@ -149,6 +149,6 @@ belépve és a `node-service-log` parancsot beírva ellenőrizhetjük is, hogy m
 ha az utolsó sorban azt látjuk, hogy `Hubot is online, talk.google.com!` akkor a Hubotunk életre
 kelt és várja az utasításainkat.
 
-[github]: http://github.com       "Gtihub"
+[github]: http://github.com       "Github"
 [Hubot]:  http://hubot.github.com "Hubot"
 [node]:   http://no.de            "No.de"
