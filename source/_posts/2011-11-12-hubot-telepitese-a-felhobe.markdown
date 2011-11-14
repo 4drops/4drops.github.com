@@ -24,7 +24,7 @@ mellett sorra jelentek meg az újak, így ma már 12 adapter közül lehet vála
 twitter, twillo, flowdock, gtalk. A gtalk adapternek köszönhetően pedig elég egy gmail account
 ahhoz, hogy saját Hubotunk legyen, akivel a GTalk chaten keresztül beszélhetünk. Persze egy
 hely is kell, ahol a bot fut és fogadja a parancsainkat. A github erre a [Heroku][] nevű, ingyenesen
-is elérhető cloud szolgáltatást ajánja. Azonban hiában ingyenes, az extra szolgáltatások,
+is elérhető cloud szolgáltatást ajánja. Azonban hiába ingyenes, az extra szolgáltatások,
 mint pl. Redis szerver (ami szükséges a Hubot futtatásához), használatához szükség van
 egy bankkártya számra. Ha ezt nem szeretnénk megadni, vagy nincs megfelelő bankkártyánk,
 szerencsére van egy másik, szintén ingyenes megoldás is. A [Joyent][] node.js cloud szolgáltatása.
