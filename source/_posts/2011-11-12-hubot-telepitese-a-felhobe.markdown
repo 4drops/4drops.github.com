@@ -7,7 +7,7 @@ author: Egyed Gábor (1ed)
 categories: node.js hubot cloud
 keywords: node.js, hubot, cloud, smartmachine
 description: Hogyan telepítsünk Hubotot SmartMachine-re
-published: false
+published: true
 ---
 
 
