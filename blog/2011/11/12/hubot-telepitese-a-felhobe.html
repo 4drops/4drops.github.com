@@ -1,24 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[4DROPS Blog]]></title>
-  <link href="http://blog.4drops.hu/atom.xml" rel="self"/>
-  <link href="http://blog.4drops.hu/"/>
-  <updated>2011-11-15T17:02:01+01:00</updated>
-  <id>http://blog.4drops.hu/</id>
-  <author>
-    <name><![CDATA[4DROPS Solutions]]></name>
-    
-  </author>
-  <generator uri="http://octopress.org/">Octopress</generator>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Hubot telepítése a felhőbe - 4DROPS Blog</title>
+  <meta name="author" content="4DROPS Solutions">
 
   
-  <entry>
-    <title type="html"><![CDATA[Hubot telepítése a felhőbe]]></title>
-    <link href="http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html"/>
-    <updated>2011-11-12T20:57:00+01:00</updated>
-    <id>http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe</id>
-    <content type="html"><![CDATA[<p>A <a href="http://github.com" title="Github">github</a> néhány hete mindenki számára elérhetővé tette a <a href="http://hubot.github.com" title="Hubot">Hubot</a> névre hallgató chat
+  <meta name="description" content="Hogyan telepítsünk Hubotot SmartMachine-re">
+  <meta name="keywords" content="node.js, hubot, cloud, smartmachine">
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html">
+  <link href="/favicon.png" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="/javascripts/ender.js"></script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <link href="/atom.xml" rel="alternate" title="4DROPS Blog" type="application/atom+xml">
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href="http://fonts.googleapis.com/css?family=PT+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css">
+
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-27003915-1']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner"><hgroup>
+  <!--
+  <div class="logo">
+    <a target="_blank" href="http://4drops.hu"><img src="/images/4drops.png" /></a>
+  </div>
+  -->
+  <h1><a href="/">4DROPS Blog</a></h1>
+  
+    <h2>Hosting, Web, PHP, Symfony</h2>
+  
+</hgroup>
+
+</header>
+  <nav role="navigation"><ul class="subscription" data-subscription="rss">
+  <li><a href="/atom.xml" rel="subscribe-rss" title="subscribe via RSS">RSS</a></li>
+  
+</ul>
+<form action="http://google.com/search" method="get">
+  <fieldset role="search">
+    <input type="hidden" name="q" value="site:blog.4drops.hu" />
+    <input class="search" type="text" name="q" results="0" placeholder="Keresés"/>
+  </fieldset>
+</form>
+<ul class="main-navigation">
+  <li><a href="/">Blog</a></li>
+  <li><a href="/blog/archives">Archívum</a></li>
+  <li><a target="_blank" href="http://4drops.hu">4DROPS</a></li>
+</ul>
+
+</nav>
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry" role="article">
+  
+  <header>
+    
+      <h1 class="entry-title">Hubot telepítése a felhőbe</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-11-12T20:57:00+01:00" pubdate data-updated="true">2011. 11. 12. 20:57</time>
+        
+      </p>
+    
+  </header>
+
+
+<div class="entry-content"><p>A <a href="http://github.com" title="Github">github</a> néhány hete mindenki számára elérhetővé tette a <a href="http://hubot.github.com" title="Hubot">Hubot</a> névre hallgató chat
 botot. A Hubot nem más mint egy <a href="http://node.js" title="node&quot;js">node.js</a> szerver, ami különböző adapterek segítségével tud a
 külvilággal kommunikálni. Például egy chat szobához csatlakozva várja a többiek parancsait,
 kérdéseit, amikre válaszol. Keres nekünk a youtube-on, különböző valuta árfolyamok között
@@ -211,7 +300,182 @@ hangosbemondón, szóljon ha valaki frissített egy éles oldalt, vagy ha valami
 küldjön a kollégáknak. Mindezt különboző scriptek segítségével lehet megtanítani
 vele. A <a href="https://github.com/github/hubot-scripts" title="Hubot scripts">hubot-scripts</a> oldalon találhatunk néhány ilyen publikus scriptet, amiket a
 <code>hubot-scripts.json</code> fájlhoz hozzáadva lehet használatba venni.</p>
-]]></content>
-  </entry>
+</div>
+
+
+  <footer>
+    <p class="meta">
+      
   
-</feed>
+
+<span class="byline author vcard">Írta: <span class="fn">Egyed Gábor (1ed)</span></span>
+
+      
+
+
+
+
+
+
+
+
+  
+
+
+
+<time datetime="2011-11-12T20:57:00+01:00" pubdate data-updated="true">2011. 11. 12. 20:57</time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/cloud/'>cloud</a>, <a class='category' href='/blog/categories/hubot/'>hubot</a>, <a class='category' href='/blog/categories/node-js/'>node.js</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html" data-via="" data-counturl="http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Friss Tartalmak</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+        <a href="/blog/2011/11/12/hubot-telepitese-a-felhobe.html">Hubot telepítése a felhőbe</a>
+      </li>
+    
+  </ul>
+</section>
+
+<section>
+  <h1>Github Repos</h1>
+  <ul id="gh_repos">
+    <li class="loading">Státusz frissítés...</li>
+  </ul>
+  
+  <a href="https://github.com/4drops">@4drops</a> on Github
+  
+  <script type="text/javascript">
+    $.domReady(function(){
+        if (!window.jXHR){
+            var jxhr = document.createElement('script');
+            jxhr.type = 'text/javascript';
+            jxhr.src = '/javascripts/libs/jXHR.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(jxhr, s);
+        }
+
+        github.showRepos({
+            user: '4drops',
+            count: 0,
+            skip_forks: true,
+            target: '#gh_repos'
+        });
+    });
+  </script>
+  <script src="/javascripts/github.js" type="text/javascript"> </script>
+</section>
+
+
+
+
+
+
+  
+</aside>
+
+
+    </div>
+  </div>
+  <footer role="contentinfo"><p>
+  Copyright &copy; 2011 - <a target="_blank" href="http://4drops.hu">4DROPS Solutions</a> -
+  <span class="credit">Powered by <a href="http://octopress.org">Octopress</a></span>
+</p>
+
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = '4dropsblog';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html';
+        var disqus_url = 'http://blog.4drops.hu/blog/2011/11/12/hubot-telepitese-a-felhobe.html';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/hu_HU/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = 'http://platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
