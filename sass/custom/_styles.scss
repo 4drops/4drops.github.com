@@ -3,10 +3,45 @@
 
 .logo {
   a {
-    display: block;
+    display: none;
+
+    @media only screen and (min-width: 480px) {
+      display: block;
+      width: 140px;
+      height: 70px;
+      background: url('/images/4drops_h70.png') no-repeat;
+
+      &:hover {
+        background: url('/images/4drops_h70_h.png') no-repeat;
+      }
+    }
+
+    @media only screen and (min-width: 768px) {
+      width: 160px;
+      height: 80px;
+      background: url('/images/4drops_h80.png') no-repeat;
+
+      &:hover {
+        background: url('/images/4drops_h80_h.png') no-repeat;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      width: 180px;
+      height: 90px;
+      background: url('/images/4drops_h90.png') no-repeat;
+
+      &:hover {
+        background: url('/images/4drops_h90_h.png') no-repeat;
+      }
+    }
   }
 
   float: right;
+}
+
+.fb_reset {
+  display: none;
 }
 
 a {
